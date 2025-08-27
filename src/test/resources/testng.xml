@@ -4,6 +4,7 @@
 
     <listeners>
         <listener class-name="com.saucedemo.utils.TestListener"/>
+        <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
     </listeners>
 
     <!-- Chrome Component Tests -->

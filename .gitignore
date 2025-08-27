@@ -1,0 +1,28 @@
+# Compiled class files
+*.class
+target/
+
+# Log files
+*.log
+logs/
+
+# Test reports
+allure-results/
+test-output/
+
+# IDE files
+.idea/
+*.iml
+.vscode/
+.eclipse/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Maven
+.mvn/
+
+# Selenium screenshots on failure
+src/test/resources/screenshots/*.png
+src/test/resources/screenshots/*.jpg

@@ -1,0 +1,15 @@
+{
+  "validUsers": [
+    ["standard_user", "secret_sauce"],
+    ["problem_user", "secret_sauce"],
+    ["performance_glitch_user", "secret_sauce"]
+  ],
+  "invalidUsers": [
+    ["invalid_user", "secret_sauce", "Username and password do not match"],
+    ["standard_user", "wrong_password", "Username and password do not match"],
+    ["locked_out_user", "secret_sauce", "locked out"],
+    ["", "secret_sauce", "Username is required"],
+    ["standard_user", "", "Password is required"],
+    ["", "", "Username is required"]
+  ]
+}

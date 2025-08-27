@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="SauceDemo Complete Testing Suite" parallel="tests" thread-count="2">
+
+    <listeners>
+        <listener class-name="com.saucedemo.utils.TestListener"/>
+    </listeners>
+
+    <!-- Chrome Component Tests -->
+    <test name="Chrome Component Tests" enabled="false">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="com.saucedemo.tests.LoginTests"/>
+            <class name="com.saucedemo.tests.ProductsPageTests"/>
+            <class name="com.saucedemo.tests.CartPageTests"/>
+            <class name="com.saucedemo.tests.CheckoutPageTests"/>
+        </classes>
+    </test>
+
+    <!-- Firefox Component Tests -->
+    <test name="Firefox Component Tests" enabled="false">
+        <parameter name="browser" value="firefox"/>
+        <classes>
+            <class name="com.saucedemo.tests.LoginTests"/>
+            <class name="com.saucedemo.tests.ProductsPageTests"/>
+            <class name="com.saucedemo.tests.CartPageTests"/>
+            <class name="com.saucedemo.tests.CheckoutPageTests"/>
+        </classes>
+    </test>
+
+    <!-- Chrome User Journey -->
+    <test name="Chrome User Journey">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="com.saucedemo.tests.UserJourneyTests"/>
+        </classes>
+    </test>
+
+    <!-- Firefox User Journey -->
+    <test name="Firefox User Journey">
+        <parameter name="browser" value="firefox"/>
+        <classes>
+            <class name="com.saucedemo.tests.UserJourneyTests"/>
+        </classes>
+    </test>
+
+</suite>

@@ -9,6 +9,7 @@ logs/
 # Test reports
 allure-results/
 .allure/
+.src/
 test-output/
 
 # IDE files
